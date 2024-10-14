@@ -9,4 +9,4 @@ def about_us(request):
         'about_info': about_info
     }
     
-    return render(request, 'about.html', context)
+    return render(request, 'about/about.html', context)
