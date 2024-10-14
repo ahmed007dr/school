@@ -227,13 +227,13 @@ h6,
 
 
 /*** Hero Header ***/
-.hero-header,
+/* .hero-header,
 .page-header {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)), url(../img/hero-img.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 /*** Hero Header ***/
 
 
@@ -358,9 +358,9 @@ h6,
 .video.border {
     border-radius: 50% 20% / 10% 40%;
 }
-
+/* , url(../img/background.jpg) */
 .about {
-    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/background.jpg);
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -658,8 +658,9 @@ h6,
 
 
 /*** Footer Start ***/
+/* , url(../img/background.jpg) */
 .footer {
-    background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, 1)), url(../img/background.jpg);
+    background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, 1));
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;

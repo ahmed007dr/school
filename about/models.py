@@ -5,6 +5,7 @@ class AboutUs(models.Model):
     subtitle = models.CharField(max_length=255)
     description = models.TextField()
     image = models.ImageField(upload_to='images/', blank=True, null=True)  
+    image_long=models.ImageField(upload_to='images/', blank=True, null=True)  
     feature1 = models.CharField(max_length=255)
     feature2 = models.CharField(max_length=255)
     feature3 = models.CharField(max_length=255)

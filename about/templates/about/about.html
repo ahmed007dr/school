@@ -3,20 +3,23 @@
 
 {% block body %}
 
-        <!-- Page Header Start -->
-        <div class="container-fluid page-header py-5 wow fadeIn" data-wow-delay="0.1s">
-            <div class="container text-center py-5">
-                <h1 class="display-2 text-white mb-4">About Us</h1>
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb justify-content-center mb-0">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                        <li class="breadcrumb-item text-white" aria-current="page">About Us</li>
-                    </ol>
-                </nav>
-            </div>
-        </div>
-        <!-- Page Header End -->
+
+<!-- Page Header Start -->
+<div class="container-fluid page-header py-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container text-center py-5">
+        <img src="{{ about_us.image_long.url }}"  class="img-fluid position-absolute" style="width: 100%; height: auto; top: 0; left: 0; z-index: -1;">
+        <h1 class="display-2 text-white mb-4">About Us</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                <li class="breadcrumb-item text-white" aria-current="page">About Us</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!-- Page Header End -->
+
 
     <!-- About Start -->
     <div class="container-fluid py-5 about bg-light">
@@ -24,7 +27,7 @@
             <div class="row g-5 align-items-center">
                 <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
                     <div class="video border">
-                        <button type="button" class="btn btn-play" data-bs-toggle="modal" data-src="{{ about_info.video_url }}" data-bs-target="#videoModal">
+                        <button type="button" class="btn btn-play" data-bs-toggle="modal" data-src="{{ about_info.image }}" >
                             <span></span>
                         </button>
                     </div>
@@ -54,7 +57,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <img src="path/to/your/image.jpg" class="img-fluid" alt="Image Preview">  <!-- استخدم هنا مسار الصورة -->
+                <img src="{{about_info.image.url}}" class="img-fluid" alt="Image Preview">  <!-- استخدم هنا مسار الصورة -->
             </div>
         </div>
     </div>
