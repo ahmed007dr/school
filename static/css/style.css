@@ -27,6 +27,7 @@
     justify-content: center;
     transition: 0.5s;
     z-index: 99;
+    left: 30px; /* بدلاً من right */
 }
 
 h1,
@@ -76,6 +77,8 @@ h6,
 .btn {
     font-weight: 600;
     transition: .5s;
+    text-align: right; /* محاذاة النص في الأزرار */
+
 }
 
 .btn-square {
@@ -150,7 +153,7 @@ h6,
 }
 
 .topbar .top-link a {
-    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .topbar .top-link a:hover {
@@ -173,6 +176,8 @@ h6,
     font-size: 16px;
     font-weight: 600;
     transition: .5s;
+    text-align: right; /* محاذاة النص في الروابط */
+
 }
 
 .navbar .navbar-nav .nav-link:hover,
