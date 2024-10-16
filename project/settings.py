@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     'settingz',
     'about',
+    'services',
 ]
 
 MIDDLEWARE = [

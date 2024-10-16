@@ -15,7 +15,7 @@ class SettingzAdmin(admin.ModelAdmin):
             'fields': ('facebook', 'telegram', 'instagram', 'linkedin')
         }),
         ('Logo', {
-            'fields': ('logo', 'title_logo')
+            'fields': ('logo', 'title_logo','long_banner')
         }),
         ('Design Credit', {
             'fields': ('design_by',)

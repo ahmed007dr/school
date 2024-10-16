@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+
+<!-- Page Header Start -->
+<div class="container-fluid page-header py-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container text-center py-5">
+        <img src="{{settings_data.long_banner.url}}" class="img-fluid position-absolute" style="width: 100%; height: auto; top: 0; left: 0; z-index: -1;">
+        <h1 class="display-2 text-white mb-4"> our service</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item text-white" aria-current="page"> our service</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!-- Page Header End -->
+
+<!-- Service Start -->
+<div class="container-fluid service py-5">
+    <div class="container py-5 ">
+        <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
+            <br><br>
+            <br><br>
+
+            <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">What We Do</h4>
+            <h1 class="mb-5 display-3">Thanks To Get Started With Our School</h1>
+        </div>
+        <div class="row g-5">
+            {% for service in services %}
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeIn" data-wow-delay="0.1s">
+                <div class="text-center border-primary border bg-white service-item">
+                    <div class="service-content d-flex align-items-center justify-content-center p-4">
+                        <div class="service-content-inner">
+                            <img src="{% if service.image_serv %}{{ service.image_serv.url }}{% else %}{{ settings_data.long.url }}{% endif %}" 
+                            class="img-fluid" 
+                            style="border-radius: 50% 20% / 10% 40%" 
+                            onerror="this.onerror=null; this.src='{{ settings_data.long.url }}';">
+                            <div class="p-4"><i class="{{ service.icon_class }} fa-6x text-primary"></i></div>
+                            <a href="#" class="h4">{{ service.title }}</a>
+                            <p class="my-3">{{ service.description }}</p>
+                            <a href="#" class="btn btn-primary text-white px-4 py-2 my-2 btn-border-radius">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- Service End -->
+{% endblock body %}

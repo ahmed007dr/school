@@ -12,6 +12,6 @@ class Settingz(models.Model):
     phone = models.CharField(max_length=20)
     site_name = models.CharField(max_length=100)
     design_by = models.CharField(max_length=100, blank=True, null=True)
-
+    long_banner = models.ImageField(upload_to='images/', blank=True, null=True)  
     def __str__(self):
         return self.site_name
