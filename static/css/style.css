@@ -25,47 +25,28 @@
     justify-content: center;
     transition: 0.5s;
     z-index: 99;
-    left: 30px; /* بدلاً من right */
 }
 
-h1,
-h2,
-h3,
-.h1,
-.h2,
-.h3 {
+h1, h2, h3, .h1, .h2, .h3 {
     font-weight: 200;
     font-family: 'Montserrat', sans-serif;
 }
 
-h4,
-h5,
-h6,
-.h4,
-.h5,
-.h6 {
+h4, h5, h6, .h4, .h5, .h6 {
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
 }
 
-.display-1,
-.display-2,
-.display-3,
-.display-4,
-.display-5,
-.display-6 {
+.display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
     font-weight: 700;
     font-family: 'Fredoka', sans-serif;
 }
 
-.display-4,
-.display-5,
-.display-6 {
+.display-4, .display-5, .display-6 {
     font-weight: 600;
 }
 
-.wow,
-.animated {
+.wow, .animated {
     animation-duration: 2s !important;
 }
 /*** Common CSS End ***/
@@ -97,10 +78,7 @@ h6,
     height: 56px;
 }
 
-.btn-square,
-.btn-sm-square,
-.btn-md-square,
-.btn-lg-square {
+.btn-square, .btn-sm-square, .btn-md-square, .btn-lg-square {
     padding: 0;
     display: flex;
     align-items: center;
@@ -111,11 +89,11 @@ h6,
 .btn.btn-primary {
     border: 0;
     color: var(--bs-white);
-    background-color: #007bff; /* اللون الأزرق الأساسي */
+    background-color: #0056b3; /* درجة أغمق من الأزرق */
 }
 
 .btn.btn-primary:hover {
-    background: #0056b3; /* درجة أغمق من الأزرق */
+    background: #004494; /* درجة أغمق من الأزرق */
     color: var(--bs-white);
 }
 
@@ -150,15 +128,11 @@ h6,
 
 .topbar .top-link a {
     margin-left: 10px;
-    color: #007bff; /* اللون الأزرق الأساسي */
+    color: #0056b3; /* درجة أغمق من الأزرق */
 }
 
 .topbar .top-link a:hover {
-    background: #0056b3 !important; /* درجة أغمق من الأزرق */
-}
-
-.topbar .top-link a:hover i {
-    color: #003f7f !important; /* درجة أغمق من الأزرق */
+    background: #004494 !important; /* درجة أغمق من الأزرق */
 }
 /*** Topbar End ***/
 
@@ -173,14 +147,14 @@ h6,
     font-weight: 600;
     transition: .5s;
     text-align: right; /* محاذاة النص في الروابط */
-    color: #007bff; /* اللون الأزرق الأساسي */
+    color: #0056b3; /* درجة أغمق من الأزرق */
 }
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active,
 .fixed-top.bg-white .navbar .navbar-nav .nav-link:hover,
 .fixed-top.bg-white .navbar .navbar-nav .nav-link.active {
-    color: #0056b3; /* درجة أغمق من الأزرق */
+    color: #004494; /* درجة أغمق من الأزرق */
 }
 
 .navbar .dropdown-toggle::after {
@@ -208,7 +182,7 @@ h6,
 }
 
 .dropdown .dropdown-menu a:hover {
-    background: #0056b3; /* درجة أغمق من الأزرق */
+    background: #004494; /* درجة أغمق من الأزرق */
     color: #ffffff;
 }
 
@@ -274,7 +248,7 @@ h6,
     display: block;
     width: 100px;
     height: 100px;
-    background: #0056b3; /* درجة أغمق من الأزرق */
+    background: #004494; /* درجة أغمق من الأزرق */
     border-radius: 50%;
     animation: pulse-border 1500ms ease-out infinite;
 }
@@ -289,7 +263,7 @@ h6,
     display: block;
     width: 100px;
     height: 100px;
-    background: #007bff; /* اللون الأزرق الأساسي */
+    background: #0056b3; /* اللون الأزرق الأساسي */
     border-radius: 50%;
     transition: all 200ms;
 }
