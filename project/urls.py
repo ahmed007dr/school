@@ -30,6 +30,7 @@ urlpatterns = [
     path('', include('team.urls')),
     path('', include('testimonial.urls')),
     path('', include('contact.urls')),
+    path('', include('homepage.urls')),
 ]
 
 
