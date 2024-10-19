@@ -26,6 +26,7 @@ urlpatterns = [
     path('', include('about.urls')),
     path('', include('services.urls')),
     path('', include('blog.urls')),
+    path('', include('event.urls')),
 ]
 
 
