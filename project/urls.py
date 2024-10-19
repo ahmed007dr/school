@@ -27,6 +27,7 @@ urlpatterns = [
     path('', include('services.urls')),
     path('', include('blog.urls')),
     path('', include('event.urls')),
+    path('', include('team.urls')),
 ]
 
 
