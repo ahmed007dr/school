@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'event',
     'team',
     'testimonial',
+    'contact',
 ]
 
 MIDDLEWARE = [
