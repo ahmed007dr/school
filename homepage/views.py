@@ -26,4 +26,4 @@ def homepage(request):
         'events': events,  
         'services': services,   }
 
-    return render(request, 'homepage/homepage.html', context)
+    return render(request, 'homepage/home.html', context)
