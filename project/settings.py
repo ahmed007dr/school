@@ -52,6 +52,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -60,6 +61,18 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'project.urls'
+
+
+from django.utils.translation import gettext_lazy as _
+
+LOCALE_PATHS = ['locale']
+LANGUAGES = [
+    ("ar", ("Arabic")),
+    ("en", ("English")),
+]
+
+
+LANGUAGE_CODE = 'ar'
 
 TEMPLATES = [
     {

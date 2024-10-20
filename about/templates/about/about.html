@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load i18n %}  <!-- Load the i18n template tag library -->
 
 {% block body %}
 
@@ -7,11 +8,11 @@
 <div class="container-fluid page-header py-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container text-center py-5">
         <img src="{{ about_info.image_long.url }}" class="img-fluid position-absolute" style="width: 100%; height: auto; top: 0; left: 0; z-index: -1;">
-        <h1 class="display-2 text-white mb-4">About Us</h1>
+        <h1 class="display-2 text-white mb-4">{% translate "About Us" %}</h1>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb justify-content-center mb-0">
-                <li class="breadcrumb-item"><a href="/">Home</a></li>
-                <li class="breadcrumb-item text-white" aria-current="page">About Us</li>
+                <li class="breadcrumb-item"><a href="/">{% translate "Home" %}</a></li>
+                <li class="breadcrumb-item text-white" aria-current="page">{% translate "About Us" %}</li>
             </ol>
         </nav>
     </div>
@@ -23,13 +24,13 @@
     <div class="container py-5">
         <div class="row g-5 align-items-center">
             <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
-                    <img src="{{about_info.image.url}}" style="border-radius: 50% 20% / 10% 40%"  class="img-fluid" alt="Image Preview">  <!-- استخدم هنا مسار الصورة -->
+                <img src="{{ about_info.image.url }}" style="border-radius: 50% 20% / 10% 40%" class="img-fluid" alt="{% translate 'Image Preview' %}"> <!-- Translator: Image Preview -->
             </div>
             <div class="col-lg-7 wow fadeIn" data-wow-delay="0.3s">
-                <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius text-center">About Us</h4>
+                <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius text-center">{% translate "About Us" %}</h4>
                 <h1 class="text-dark mb-4 display-5 text-center">{{ about_info.title }}</h1>
                 <p class="text-dark mb-4 text-center">{{ about_info.description }}</p>
-                <a href="{{ about_info.more_details_link }}" class="btn btn-primary px-5 py-3 btn-border-radius">More Details</a>
+                <a href="{{ about_info.more_details_link }}" class="btn btn-primary px-5 py-3 btn-border-radius">{% translate "More Details" %}</a>
             </div>
         </div>
     </div>
