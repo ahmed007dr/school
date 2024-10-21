@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-21 00:35+0300\n"
+"POT-Creation-Date: 2024-10-21 02:10+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,36 +18,41 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
 #: .\about\templates\about\about.html:11 .\about\templates\about\about.html:15
 #: .\about\templates\about\about.html:30
 #: .\homepage\templates\homepage\home.html:35
+#, fuzzy
+#| msgid "About"
 msgid "About Us"
-msgstr "من نحن"
+msgstr "حول"
 
 #: .\about\templates\about\about.html:14 .\blog\templates\blog\blog.html:14
 #: .\services\templates\services\service_list.html:14 .\templates\base.html:68
 msgid "Home"
-msgstr "المنزل"
+msgstr ""
 
 #: .\about\templates\about\about.html:27
 msgid "Image Preview"
-msgstr "معاينة الصورة"
+msgstr ""
 
 #: .\about\templates\about\about.html:33
 #: .\homepage\templates\homepage\home.html:50
 msgid "More Details"
-msgstr "مزيد من التفاصيل"
+msgstr ""
 
 #: .\blog\templates\blog\blog.html:11 .\blog\templates\blog\blog.html:15
 #: .\services\templates\services\service_list.html:11
 #: .\services\templates\services\service_list.html:15
+#, fuzzy
+#| msgid "Services"
 msgid "Our Service"
-msgstr "خدمتنا"
+msgstr "الخدمات"
 
 #: .\blog\templates\blog\blog.html:26
 #: .\homepage\templates\homepage\home.html:189
 msgid "Latest News & Blog"
-msgstr "آخر الأخبار"
+msgstr ""
 
 #: .\blog\templates\blog\blog.html:27
 #: .\homepage\templates\homepage\home.html:190
@@ -63,16 +68,20 @@ msgid "Comments"
 msgstr ""
 
 #: .\blog\templates\blog\blog.html:46
+#, fuzzy
+#| msgid "Baby"
 msgid "Baby Care"
-msgstr ""
+msgstr "طفل"
 
 #: .\blog\templates\blog\blog.html:55
 msgid "View Details"
 msgstr ""
 
 #: .\contact\templates\contact\contact.html:12
+#, fuzzy
+#| msgid "Contact"
 msgid "Contact Us"
-msgstr ""
+msgstr "اتصل"
 
 #: .\contact\templates\contact\contact.html:13
 msgid "Contact For Any Query"
@@ -87,252 +96,248 @@ msgstr ""
 
 #: .\contact\templates\contact\contact.html:14
 msgid "Download Now"
-msgstr ""
+msgstr "تحميل الآن"
 
 #: .\contact\templates\contact\contact.html:21
 msgid "Address"
-msgstr ""
+msgstr "العنوان"
 
 #: .\contact\templates\contact\contact.html:22
 msgid "104 North tower New York, USA"
-msgstr ""
+msgstr "104 برج الشمال نيويورك، الولايات المتحدة"
 
 #: .\contact\templates\contact\contact.html:30
 msgid "Mail Us"
-msgstr ""
+msgstr "راسلنا"
 
 #: .\contact\templates\contact\contact.html:39
 msgid "Telephone"
-msgstr ""
+msgstr "الهاتف"
 
 #: .\contact\templates\contact\contact.html:40
 msgid "(+012) 3456 7890 123"
-msgstr ""
+msgstr "(+012) 3456 7890 123"
 
 #: .\contact\templates\contact\contact.html:55
 msgid "Submit"
-msgstr ""
+msgstr "إرسال"
 
 #: .\event\templates\event\event.html:11
 #: .\homepage\templates\homepage\home.html:153
 msgid "Our Events"
-msgstr ""
+msgstr "فعالياتنا"
 
 #: .\event\templates\event\event.html:12
 #: .\homepage\templates\homepage\home.html:154
 msgid "Our Upcoming Events"
-msgstr ""
+msgstr "فعالياتنا القادمة"
 
 #: .\homepage\templates\homepage\home.html:40
 msgid "Sport Activities"
-msgstr ""
+msgstr "أنشطة رياضية"
 
 #: .\homepage\templates\homepage\home.html:41
 msgid "Outdoor Games"
-msgstr ""
+msgstr "ألعاب خارجية"
 
 #: .\homepage\templates\homepage\home.html:42
 msgid "Nutritious Foods"
-msgstr ""
+msgstr "أطعمة مغذية"
 
 #: .\homepage\templates\homepage\home.html:45
 msgid "Highly Secured"
-msgstr ""
+msgstr "أمان عالي"
 
 #: .\homepage\templates\homepage\home.html:46
 msgid "Friendly Environment"
-msgstr ""
+msgstr "بيئة صديقة"
 
 #: .\homepage\templates\homepage\home.html:47
 msgid "Qualified Teacher"
-msgstr ""
+msgstr "معلم مؤهل"
 
 #: .\homepage\templates\homepage\home.html:60
 msgid "Youtube Video"
-msgstr ""
+msgstr "فيديو يوتيوب"
 
 #: .\homepage\templates\homepage\home.html:61
 msgid "Close"
-msgstr ""
+msgstr "إغلاق"
 
 #: .\homepage\templates\homepage\home.html:78
 #: .\services\templates\services\service_list.html:28
 msgid "What We Do"
-msgstr ""
+msgstr "ماذا نفعل"
 
 #: .\homepage\templates\homepage\home.html:79
 #: .\services\templates\services\service_list.html:29
 msgid "Thanks To Get Started With Our School"
-msgstr ""
+msgstr "شكرًا للبدء معنا في مدرستنا"
 
 #: .\homepage\templates\homepage\home.html:92
 #: .\services\templates\services\service_list.html:44
 msgid "Read More"
-msgstr ""
+msgstr "اقرأ المزيد"
 
 #: .\homepage\templates\homepage\home.html:107
 msgid "Our Programs"
-msgstr ""
+msgstr "برامجنا"
 
 #: .\homepage\templates\homepage\home.html:108
 msgid "We Offer An Exclusive Program For Kids"
-msgstr ""
+msgstr "نقدم برنامجًا حصريًا للأطفال"
 
 #: .\homepage\templates\homepage\home.html:130
 msgid "Arts Designer"
-msgstr ""
+msgstr "مصمم فني"
 
 #: .\homepage\templates\homepage\home.html:134
 msgid "Sits"
-msgstr ""
+msgstr "مقاعد"
 
 #: .\homepage\templates\homepage\home.html:135
 msgid "Lessons"
-msgstr ""
+msgstr "دروس"
 
 #: .\homepage\templates\homepage\home.html:136
 msgid "Hours"
-msgstr ""
+msgstr "ساعات"
 
 #: .\homepage\templates\homepage\home.html:142
 msgid "View All Programs"
-msgstr ""
+msgstr "عرض جميع البرامج"
 
 #: .\homepage\templates\homepage\home.html:208
 msgid "Category"
-msgstr ""
+msgstr "فئة"
 
 #: .\homepage\templates\homepage\home.html:234
 #: .\team\templates\team\team.html:11 .\templates\base.html:77
 msgid "Our Team"
-msgstr ""
+msgstr "فريقنا"
 
 #: .\homepage\templates\homepage\home.html:235
 #: .\team\templates\team\team.html:12
 msgid "Meet With Our Expert Teacher"
-msgstr ""
+msgstr "قابل معلمينا الخبراء"
 
 #: .\homepage\templates\homepage\home.html:270
 #: .\testimonial\templates\testimonial\testimonial.html:11
 msgid "Our Testimonials"
-msgstr ""
+msgstr "شهاداتنا"
 
 #: .\homepage\templates\homepage\home.html:271
 #: .\testimonial\templates\testimonial\testimonial.html:12
 msgid "Parents Say About Us"
-msgstr ""
+msgstr "ماذا يقول الآباء عنا"
 
 #: .\project\settings.py:70
 msgid "Arabic"
-msgstr ""
-
-#: .\project\settings.py:71
-msgid "English"
-msgstr ""
+msgstr "العربية"
 
 #: .\team\templates\team\team.html:18
 msgid "Team Member Image"
-msgstr ""
+msgstr "صورة عضو الفريق"
 
 #: .\templates\base.html:9
 msgid "Al-Ruwad Private Schools"
-msgstr ""
+msgstr "مدارس الرواد الخاصة"
 
 #: .\templates\base.html:69
 msgid "About"
-msgstr ""
+msgstr "حول"
 
 #: .\templates\base.html:70
 msgid "Services"
-msgstr ""
+msgstr "الخدمات"
 
 #: .\templates\base.html:71
 msgid "Programs"
-msgstr ""
+msgstr "البرامج"
 
 #: .\templates\base.html:72
 msgid "Events"
-msgstr ""
+msgstr "الفعاليات"
 
 #: .\templates\base.html:74
 msgid "Pages"
-msgstr ""
+msgstr "الصفحات"
 
 #: .\templates\base.html:76
 msgid "Our Blog"
-msgstr ""
+msgstr "مدونتنا"
 
 #: .\templates\base.html:78
 msgid "Testimonial"
-msgstr ""
+msgstr "شهادة"
 
 #: .\templates\base.html:79
 msgid "404 Page"
-msgstr ""
+msgstr "صفحة 404"
 
 #: .\templates\base.html:82
 msgid "Contact"
-msgstr ""
+msgstr "اتصل"
 
 #: .\templates\base.html:94
 msgid "Have any questions?"
-msgstr ""
+msgstr "هل لديك أي استفسارات؟"
 
 #: .\templates\base.html:115
 msgid "Baby"
-msgstr ""
+msgstr "طفل"
 
 #: .\templates\base.html:115
 msgid "Care"
-msgstr ""
+msgstr "رعاية"
 
 #: .\templates\base.html:118
 msgid "Newsletter"
-msgstr ""
+msgstr "النشرة الإخبارية"
 
 #: .\templates\base.html:120
 msgid "Your email"
-msgstr ""
+msgstr "بريدك الإلكتروني"
 
 #: .\templates\base.html:121
 msgid "SignUp"
-msgstr ""
+msgstr "اشتراك"
 
 #: .\templates\base.html:129
 msgid "Monday: 8am to 5pm"
-msgstr ""
+msgstr "الاثنين: 8 صباحًا إلى 5 مساءً"
 
 #: .\templates\base.html:130
 msgid "Tuesday: 8am to 5pm"
-msgstr ""
+msgstr "الثلاثاء: 8 صباحًا إلى 5 مساءً"
 
 #: .\templates\base.html:131
 msgid "Wednesday: 8am to 5pm"
-msgstr ""
+msgstr "الأربعاء: 8 صباحًا إلى 5 مساءً"
 
 #: .\templates\base.html:132
 msgid "Thursday: 8am to 5pm"
-msgstr ""
+msgstr "الخميس: 8 صباحًا إلى 5 مساءً"
 
 #: .\templates\base.html:133
 msgid "Friday: 8am to 5pm"
-msgstr ""
+msgstr "الجمعة: 8 صباحًا إلى 5 مساءً"
 
 #: .\templates\base.html:134
 msgid "Saturday: 8am to 5pm"
-msgstr ""
+msgstr "السبت: 8 صباحًا إلى 5 مساءً"
 
 #: .\templates\base.html:135
 msgid "Sunday: Closed"
-msgstr ""
+msgstr "الأحد: مغلق"
 
 #: .\templates\base.html:141
 msgid "LOCATION"
-msgstr ""
+msgstr "الموقع"
 
 #: .\templates\base.html:146
 msgid "26/7 Hours Service"
-msgstr ""
+msgstr "خدمة على مدار الساعة"
 
 #: .\templates\base.html:158
 msgid "OUR GALLERY"
@@ -344,9 +349,13 @@ msgstr "جميع الحقوق محفوظة."
 
 #: .\templates\base.html:206
 msgid "Designed By"
-msgstr "صمم بواسطة"
+msgstr "تصميم بواسطة"
 
 #: .\testimonial\templates\testimonial\testimonial.html:21
+#, fuzzy
+#| msgid "Testimonial"
 msgid "Testimonial image"
-msgstr "صورة الشهادة"
+msgstr "شهادة"
 
+#~ msgid "English"
+#~ msgstr "الإنجليزية"

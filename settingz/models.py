@@ -13,5 +13,9 @@ class Settingz(models.Model):
     site_name = models.CharField(max_length=100)
     design_by = models.CharField(max_length=100, blank=True, null=True)
     long_banner = models.ImageField(upload_to='images/', blank=True, null=True)  
+    image = models.ImageField(upload_to='gallery/')
+    caption = models.CharField(max_length=255, blank=True)
+
+
     def __str__(self):
         return self.site_name

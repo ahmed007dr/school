@@ -67,12 +67,13 @@ from django.utils.translation import gettext_lazy as _
 
 LOCALE_PATHS = ['locale']
 LANGUAGES = [
-    ("ar", ("Arabic")),
+    ('ar', _('Arabic')),
     ("en", ("English")),
 ]
 
 
 LANGUAGE_CODE = 'ar'
+USE_I18N = True
 
 TEMPLATES = [
     {
@@ -128,7 +129,6 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
 

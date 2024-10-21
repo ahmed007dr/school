@@ -20,6 +20,9 @@ class SettingzAdmin(admin.ModelAdmin):
         ('Design Credit', {
             'fields': ('design_by',)
         }),
+        ('Gallery De',{
+            'fields': ('image','caption')
+        }),
     )
 
     def has_add_permission(self, request):

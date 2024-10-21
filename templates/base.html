@@ -59,7 +59,7 @@
         </div>
         <div class="container px-0">
             <nav class="navbar navbar-light navbar-expand-xl py-3">
-                <a href="/" class="navbar-brand"><h1 class="text-primary display-6">{{ settings_data.stie_name }}<span class="text-secondary">{{ settings_data.stie_name }}</span></h1></a>
+                <a href="/" class="navbar-brand"><h1 class="text-primary display-6">{{ settings_data.site_name }}<span class="text-secondary">{{ settings_data.site_name }}</span></h1></a>
                 <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars text-primary"></span>
                 </button>
@@ -112,7 +112,7 @@
             <div class="row g-5">
                 <div class="col-md-6 col-lg-4 col-xl-3">
                     <div class="footer-item">
-                        <h2 class="fw-bold mb-3"><span class="text-primary mb-0">{% translate "Baby" %}</span><span class="text-secondary">{% translate "Care" %}</span></h2>
+                        <h2 class="fw-bold mb-3"><span class="text-primary mb-0">{{ settings_data.site_name }}</span><span class="text-secondary">{{ settings_data.site_name }}</span></h2>
                         <p class="mb-4">{{ settings_data.title_logo }}.</p>
                         <div class="border border-primary p-3 rounded bg-light">
                             <h5 class="mb-3">{% translate "Newsletter" %}</h5>
@@ -159,32 +159,32 @@
                         <div class="row g-3">
                             <div class="col-4">
                                 <div class="footer-galary-img rounded-circle border border-primary">
-                                    <img src="img/galary-1.jpg" class="img-fluid rounded-circle p-2" alt="">
+                                    <img src="{{ settings_data.image}}" class="img-fluid rounded-circle p-2" alt="">
                                 </div>
                             </div>
                             <div class="col-4">
                                 <div class="footer-galary-img rounded-circle border border-primary">
-                                    <img src="img/galary-2.jpg" class="img-fluid rounded-circle p-2" alt="">
+                                    <img src="{{ settings_data.image}}" class="img-fluid rounded-circle p-2" alt="">
                                 </div>
                             </div>
                             <div class="col-4">
                                 <div class="footer-galary-img rounded-circle border border-primary">
-                                    <img src="img/galary-3.jpg" class="img-fluid rounded-circle p-2" alt="">
+                                    <img src="{{ settings_data.image}}" class="img-fluid rounded-circle p-2" alt="">
                                 </div>
                             </div>
                             <div class="col-4">
                                 <div class="footer-galary-img rounded-circle border border-primary">
-                                    <img src="img/galary-4.jpg" class="img-fluid rounded-circle p-2" alt="">
+                                    <img src="{{ settings_data.image}}" class="img-fluid rounded-circle p-2" alt="">
                                 </div>
                             </div>
                             <div class="col-4">
                                 <div class="footer-galary-img rounded-circle border border-primary">
-                                    <img src="img/galary-5.jpg" class="img-fluid rounded-circle p-2" alt="">
+                                    <img src="{{ settings_data.image}}" class="img-fluid rounded-circle p-2" alt="">
                                 </div>
                             </div>
                             <div class="col-4">
                                 <div class="footer-galary-img rounded-circle border border-primary">
-                                    <img src="img/galary-6.jpg" class="img-fluid rounded-circle p-2" alt="">
+                                    <img src="{{ settings_data.image}}" class="img-fluid rounded-circle p-2" alt="">
                                 </div>
                             </div>
                         </div>
