@@ -31,6 +31,8 @@ urlpatterns = [
     path('', include('testimonial.urls')),
     path('', include('contact.urls')),
     path('', include('homepage.urls')),
+    path("i18n/", include("django.conf.urls.i18n")),
+
 ]
 
 

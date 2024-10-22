@@ -140,13 +140,12 @@ h4, h5, h6, .h4, .h5, .h6 {
 .navbar {
     border-bottom: 1px solid rgba(0, 123, 255, .1); /* أزرق باهت */
 }
-
 .navbar .navbar-nav .nav-link {
     padding: 10px 12px;
     font-size: 16px;
     font-weight: 600;
     transition: .5s;
-    text-align: right; /* محاذاة النص في الروابط */
+    text-align: left; 
     color: #0056b3; /* درجة أغمق من الأزرق */
 }
 
