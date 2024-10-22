@@ -3,22 +3,6 @@
 {% load i18n %}  <!-- Load the i18n template tag library -->
 
 {% block body %}
-<!-- Hero Start -->
-<div class="container-fluid py-5 hero-header wow fadeIn" data-wow-delay="0.1s">
-    <div class="container py-5">
-        <div class="row g-5">
-            <div class="col-lg-7 col-md-12">
-                <img src="{{ about_info.image_long.url }}" class="img-fluid position-absolute" style="width: 100%; height: auto; top: 0; left: 0; z-index: -1;">
-                <h1 class="mb-3 text-primary">{{ settings_data.stie_name }}</h1>
-                <h1 class="mb-5 display-1 text-white">{{ settings_data.stie_name }}</h1>
-                {% comment %} <a href="" class="btn btn-primary px-4 py-3 px-md-5 me-4 btn-border-radius">{% translate "Get Started" %}</a>
-                <a href="" class="btn btn-primary px-4 py-3 px-md-5 btn-border-radius">{% translate "Learn More" %}</a> {% endcomment %}
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Hero End -->
-
 <!-- About Start -->
 <div class="container-fluid py-5 about bg-light">
     <div class="container py-5">
@@ -27,22 +11,22 @@
                     <img src="{{ about_info.image.url }}" style="border-radius: 50% 20% / 10% 40%" class="img-fluid" alt="{% translate 'Image Preview' %}"> <!-- Translator: Image Preview -->
                 </div>
             <div class="col-lg-7 wow fadeIn" data-wow-delay="0.3s">
-                {% comment %} <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">{% translate "About Us" %}</h4> {% endcomment %}
+                {% comment %} <h4 class="text-secondary mb-4 border-bottom border-secondary border-2 d-inline-block p-2 title-border-radius">{% translate "About Us" %}</h4> {% endcomment %}
                 <h1 class="text-dark mb-4 display-5">{{ about_info.title }}</h1>
                 <p class="text-dark mb-4">{{ about_info.description }}</p>
                 <div class="row mb-4">
                     <div class="col-lg-6">
                         <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>{% translate "Sport Activities" %}</h6>
-                        <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-primary"></i>{% translate "Outdoor Games" %}</h6>
+                        <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-secondary"></i>{% translate "Outdoor Games" %}</h6>
                         <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-secondary"></i>{% translate "Nutritious Foods" %}</h6>
                     </div>
                     <div class="col-lg-6">
                         <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>{% translate "Highly Secured" %}</h6>
-                        <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-primary"></i>{% translate "Friendly Environment" %}</h6>
+                        <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-secondary"></i>{% translate "Friendly Environment" %}</h6>
                         <h6><i class="fas fa-check-circle me-2 text-secondary"></i>{% translate "Qualified Teacher" %}</h6>
                     </div>
                 </div>
-                <a href="{% url 'about_us' %}" class="btn btn-primary px-5 py-3 btn-border-radius">{% translate "More Details" %}</a>
+                <a href="{% url 'about_us' %}" class="btn btn-secondary px-5 py-3 btn-border-radius">{% translate "More Details" %}</a>
             </div>
         </div>
     </div>
@@ -51,22 +35,22 @@
 <!-- Service Start -->
 <div class="container-fluid service py-5">
     <div class="container py-5">
-        <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
-            {% comment %} <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">{% translate "What We Do" %}</h4> {% endcomment %}
+        <div class="mx-auto text-center wow fadeIn" style="max-width: 700px;">
+            {% comment %} <h4 class="text-secondary mb-4 border-bottom border-secondary border-2 d-inline-block p-2 title-border-radius">{% translate "What We Do" %}</h4> {% endcomment %}
             <h1 class="mb-5 display-3">{% translate "Thanks To Get Started With Our School" %}</h1>
         </div>
         <div class="row g-5">
             {% for service in services %}
-            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeIn" data-wow-delay="{{ forloop.counter0|add:1 }}0s">
-                <div class="text-center border-primary border bg-white service-item">
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeIn" >
+                <div class="text-center border-secondary border bg-white service-item">
                     <div class="service-content d-flex align-items-center justify-content-center p-4">
                         <div class="service-content-inner">
                             <div class="p-4">
-                                <i class="{{ service.image_serv.url }} fa-6x text-primary"></i>
+                                <i class="{{ service.image_serv.url }} fa-6x text-secondary"></i>
                             </div>
                             <a href="#" class="h4">{{ service.title }}</a>
                             <p class="my-3">{{ service.description|truncatewords:20 }}</p>
-                            <a href="#" class="btn btn-primary text-white px-4 py-2 my-2 btn-border-radius">{% translate "Read More" %}</a>
+                            <a href="#" class="btn btn-secondary text-white px-4 py-2 my-2 btn-border-radius">{% translate "Read More" %}</a>
                         </div>
                     </div>
                 </div>
@@ -77,63 +61,17 @@
 </div>
 <!-- Service End -->
 
-<!-- Programs Start -->
-<div class="container-fluid program py-5">
-    <div class="container py-5">
-        <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
-            {% comment %} <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">{% translate "Our Programs" %}</h4> {% endcomment %}
-            <h1 class="mb-5 display-3">{% translate "We Offer An Exclusive Program For Kids" %}</h1>
-        </div>
-        <div class="row g-5 justify-content-center">
-            {% for program in programs %}
-            <div class="col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay="0.1s">
-                <div class="program-item rounded">
-                    <div class="program-img position-relative">
-                        <div class="overflow-hidden img-border-radius">
-                            <img src="{{ program.image.url }}" class="img-fluid w-100" alt="{{ program.title }}">
-                        </div>
-                        <div class="px-4 py-2 bg-primary text-white program-rate">${{ program.price }}</div>
-                    </div>
-                    <div class="program-text bg-white px-4 pb-3">
-                        <div class="program-text-inner">
-                            <a href="#" class="h4">{{ program.title }}</a>
-                            <p class="mt-3 mb-0">{{ program.description|truncatewords:20 }}</p>
-                        </div>
-                    </div>
-                    <div class="program-teacher d-flex align-items-center border-top border-primary bg-white px-4 py-3">
-                        <img src="{{ program.teacher_image.url }}" class="img-fluid rounded-circle p-2 border border-primary bg-white" alt="{{ program.teacher_name }}" style="width: 70px; height: 70px;">
-                        <div class="ms-3">
-                            <h6 class="mb-0 text-primary">{{ program.teacher_name }}</h6>
-                            <small>{% translate "Arts Designer" %}</small>
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-between px-4 py-2 bg-primary rounded-bottom">
-                        <small class="text-white"><i class="fas fa-wheelchair me-1"></i> {{ program.seats }} {% translate "Sits" %}</small>
-                        <small class="text-white"><i class="fas fa-book me-1"></i> {{ program.lessons }} {% translate "Lessons" %}</small>
-                        <small class="text-white"><i class="fas fa-clock me-1"></i> {{ program.hours }} {% translate "Hours" %}</small>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-            <div class="d-inline-block text-center wow fadeIn" data-wow-delay="0.1s">
-                <a href="#" class="btn btn-primary px-5 py-3 text-white btn-border-radius">{% translate "View All Programs" %}</a>
-            </div>
-        </div> 
-    </div>
-</div>
-<!-- Program End -->
-
 <!-- Events Start -->
 <div class="container-fluid events py-5 bg-light">
     <div class="container py-5">
-        <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
-            {% comment %} <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">{% translate "Our Events" %}</h4> {% endcomment %}
+        <div class="mx-auto text-center  wow fadeIn"  style="max-width: 700px;">
+            {% comment %} <h4 class="text-secondary mb-4 border-bottom border-secondary border-2 d-inline-block p-2 title-border-radius">{% translate "Our Events" %}</h4> {% endcomment %}
             <h1 class="mb-5 display-3">{% translate "Our Upcoming Events" %}</h1>
         </div>
         <div class="row g-5 justify-content-center">
             {% for event in events %}
-            <div class="col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay="{{ forloop.counter0|add:1 }}0s">
-                <div class="events-item bg-primary rounded">
+            <div class="col-md-6 col-lg-6 col-xl-4 wow fadeIn " >
+                <div class="events-item bg-secondary rounded bg-dark">
                     <div class="events-inner position-relative">
                         <div class="events-img overflow-hidden rounded-circle position-relative">
                             <img src="{{ event.image.url }}" class="img-fluid w-100 rounded-circle" alt="{{ event.title }}">
@@ -143,11 +81,11 @@
                         </div>
                         <div class="px-4 py-2 bg-secondary text-white text-center events-rate">{{ event.date|date:"d M" }}</div>
                         <div class="d-flex justify-content-between px-4 py-2 bg-secondary">
-                            <small class="text-white"><i class="fas fa-calendar me-1 text-primary"></i> {{ event.time|time:"g:i A" }}</small>
-                            <small class="text-white"><i class="fas fa-map-marker-alt me-1 text-primary"></i> {{ event.location }}</small>
+                            <small class="text-white"><i class="fas fa-calendar me-1 text-secondary"></i> {{ event.time|time:"g:i A" }}</small>
+                            <small class="text-white"><i class="fas fa-map-marker-alt me-1 text-secondary"></i> {{ event.location }}</small>
                         </div>
                     </div>
-                    <div class="events-text p-4 border border-primary bg-white border-top-0 rounded-bottom">
+                    <div class="events-text p-4 border border-secondary bg-white border-top-0 rounded-bottom">
                         <a href="#" class="h4">{{ event.title }}</a>
                         <p class="mb-0 mt-3">{{ event.description|truncatewords:20 }}</p>
                     </div>
@@ -162,27 +100,26 @@
 <!-- Blog Start-->
 <div class="container-fluid blog py-5">
     <div class="container py-5">
-        <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 600px;">
-            {% comment %} <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">{% translate "Latest News & Blog" %}</h4> {% endcomment %}
+        <div class="mx-auto text-center wow fadeIn"  style="max-width: 600px;">
+            {% comment %} <h4 class="text-secondary mb-4 border-bottom border-secondary border-2 d-inline-block p-2 title-border-radius">{% translate "Latest News & Blog" %}</h4> {% endcomment %}
             <h1 class="mb-5 display-3">{% translate "Read Our Latest News & Blog" %}</h1>
         </div>
         <div class="row g-5 justify-content-center">
             {% for post in blog_posts %}
-            <div class="col-md-6 col-lg-6 col-xl-4 wow fadeIn" data-wow-delay="0.1s">
+            <div class="col-md-6 col-lg-6 col-xl-4 wow fadeIn">
                 <div class="blog-item rounded-bottom">
                     <div class="blog-img overflow-hidden position-relative img-border-radius">
                         <img src="{{ post.image.url }}" class="img-fluid w-100" alt="{{ post.title }}">
                     </div>
-                    <div class="d-flex justify-content-between px-4 py-3 bg-light border-bottom border-primary blog-date-comments">
+                    <div class="d-flex justify-content-between px-4 py-3 bg-light border-bottom border-secondary blog-date-comments bg-dark">
                         <small class="text-dark"><i class="fas fa-calendar me-1 text-dark"></i> {{ post.date_posted|date:"d M Y" }}</small>
                     </div>
-                    <div class="blog-content d-flex align-items-center px-4 py-3 bg-light">
-                        <div class="overflow-hidden rounded-circle rounded-top border border-primary">
-                            <img src="img/program-teacher.jpg" class="img-fluid rounded-circle p-2 rounded-top" alt="" style="width: 70px; height: 70px; border-style: dotted; border-color: var(--bs-primary) !important;">
+                    <div class="blog-content d-flex align-items-center  px-4 py-3 bg-light">
+                        <div class="overflow-hidden rounded-circle rounded-top border border-secondary">
+                            <img src="{{ post.image.url }}" class="img-fluid rounded-circle p-2 rounded-top" alt="" style="width: 70px; height: 70px; border-style: dotted; border-color: var(--bs-secondary) !important;">
                         </div>
                         <div class="ms-3">
-                            <h6 class="text-primary">{{ post.author }}</h6>
-                            <p class="text-muted">{% translate "Category" %}</p> <!-- Replace with actual category if available -->
+                            <h6 class="text-secondary">{{ post.author }}</h6>
                         </div>
                     </div>
                     <div class="px-4 pb-4 bg-light rounded-bottom">
@@ -191,7 +128,7 @@
                             <p class="mt-3 mb-4">{{ post.content|truncatewords:20 }}</p>
                         </div>
                         <div class="text-center">
-                            {% comment %} <a href="{% url 'blog_post_detail' post.id %}" class="btn btn-primary text-white px-4 py-2 mb-3 btn-border-radius">{% translate "View Details" %}</a> {% endcomment %}
+                            {% comment %} <a href="{% url 'blog_post_detail' post.id %}" class="btn btn-secondary text-white px-4 py-2 mb-3 btn-border-radius">{% translate "View Details" %}</a> {% endcomment %}
                         </div>
                     </div>
                 </div>
@@ -205,29 +142,26 @@
 <!-- Team Start-->
 <div class="container-fluid team py-5">
     <div class="container py-5">
-        <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 600px;">
-            {% comment %} <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">{% translate "Our Team" %}</h4> {% endcomment %}
+        <div class="mx-auto text-center wow fadeIn" style="max-width: 600px;">
+            {% comment %} <h4 class="text-secondary mb-4 border-bottom border-secondary border-2 d-inline-block p-2 title-border-radius">{% translate "Our Team" %}</h4> {% endcomment %}
             <h1 class="mb-5 display-3">{% translate "Meet With Our Expert Teacher" %}</h1>
         </div>
         <div class="row g-5 justify-content-center">
             {% for member in team_members %}
-            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="{{ forloop.counter0|add:1 }}0s">
-                <div class="team-item border border-primary img-border-radius overflow-hidden">
+            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" >
+                <div class="team-item border border-secondary img-border-radius overflow-hidden">
                     <img src="{{ member.image.url }}" class="img-fluid w-100" alt="{{ member.name }}">
                     <div class="team-icon d-flex align-items-center justify-content-center">
-                        <a class="share btn btn-primary btn-md-square text-white rounded-circle me-3" href=""><i class="fas fa-share-alt"></i></a>
+                        <a class="share btn btn-secondary btn-md-square text-white rounded-circle me-3" href=""><i class="fas fa-share-alt"></i></a>
                         {% if member.facebook_link %}
-                        <a class="share-link btn btn-primary btn-md-square text-white rounded-circle me-3" href="{{ member.facebook_link }}"><i class="fab fa-facebook-f"></i></a>
-                        {% endif %}
-                        {% if member.twitter_link %}
-                        <a class="share-link btn btn-primary btn-md-square text-white rounded-circle me-3" href="{{ member.twitter_link }}"><i class="fab fa-twitter"></i></a>
+                        <a class="share-link btn btn-secondary btn-md-square text-white rounded-circle me-3" href="{{ member.facebook_link }}"><i class="fab fa-facebook-f"></i></a>
                         {% endif %}
                         {% if member.instagram_link %}
-                        <a class="share-link btn btn-primary btn-md-square text-white rounded-circle" href="{{ member.instagram_link }}"><i class="fab fa-instagram"></i></a>
+                        <a class="share-link btn btn-secondary btn-md-square text-white rounded-circle" href="{{ member.instagram_link }}"><i class="fab fa-instagram"></i></a>
                         {% endif %}
                     </div>
                     <div class="team-content text-center py-3">
-                        <h4 class="text-primary">{{ member.name }}</h4>
+                        <h4 class="text-secondary">{{ member.name }}</h4>
                         <p class="text-muted mb-2">{{ member.position }}</p>
                     </div>
                 </div>
@@ -238,37 +172,5 @@
 </div>
 <!-- Team End-->
 
-<!-- Testimonial Start -->
-<div class="container-fluid testimonial py-5">
-    <div class="container py-5">
-        <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
-            {% comment %} <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">{% translate "Our Testimonials" %}</h4> {% endcomment %}
-            <h1 class="mb-5 display-3">{% translate "Parents Say About Us" %}</h1>
-        </div>
-        <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay="0.3s">
-            {% for testimonial in testimonials %}
-            <div class="testimonial-item img-border-radius bg-light border border-primary p-4">
-                <div class="p-4 position-relative">
-                    <i class="fa fa-quote-right fa-2x text-primary position-absolute" style="top: 15px; right: 15px;"></i>
-                    <div class="d-flex align-items-center">
-                        <div class="border border-primary bg-white rounded-circle">
-                            <img src="{{ testimonial.image.url }}" class="rounded-circle p-2" style="width: 80px; height: 80px; border-style: dotted; border-color: var(--bs-primary);" alt="{{ testimonial.name }}">
-                        </div>
-                        <div class="ms-4">
-                            <h4 class="text-dark">{{ testimonial.name }}</h4>
-                            <p class="m-0 pb-3">{{ testimonial.profession }}</p>
-                        </div>
-                    </div>
-                    <div class="border-top border-primary mt-4 pt-3">
-                        <p class="mb-0">{{ testimonial.message }}</p>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</div>
-<!-- Testimonial End -->
 
-
-        {% endblock body %}
+{% endblock body %}

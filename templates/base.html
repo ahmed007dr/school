@@ -37,13 +37,13 @@
 
     <!-- Spinner Start -->
     <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-grow text-primary" role="status"></div>
+        <div class="spinner-grow text-secondary" role="status"></div>
     </div>
     <!-- Spinner End -->
 
     <!-- Navbar start -->
     <div class="container-fluid border-bottom bg-light wow fadeIn" data-wow-delay="0.1s">
-        <div class="container topbar bg-primary d-none d-lg-block bg-dark py-2" style="border-radius: 0 40px">
+        <div class="container topbar bg-secondary d-none d-lg-block bg-dark py-2" style="border-radius: 0 40px">
             <div class="d-flex justify-content-between">
                 <div class="top-info ps-2">
                     <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">{{ settings_data.address }}</a></small>
@@ -62,7 +62,7 @@
                                 </option>
                             {% endfor %}
                         </select>
-                        <input type="submit" value="Go" class="btn btn-primary ms-2">
+                        <input type="submit" value="Go" class="btn btn-secondary ms-2">
                     </form>
                     
                     <div class="social-icons d-flex">
@@ -75,10 +75,10 @@
             </div>
         </div>
         <div class="container px-0">
-            <nav class="navbar  bg-dark navbar-expand-xl py-3">
-                <a href="/" class="navbar-brand"><h1 class="text-primary display-6"><span class="text-secondary">{{ settings_data.site_name }}</span></h1></a>
+            <nav class="navbar  navbar-expand-xl py-3">
+                <a href="/" class="navbar-brand"><h1 class="text-secondary display-6"><span class="text-secondary">{{ settings_data.site_name }}</span></h1></a>
                 <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars text-primary"></span>
+                    <span class="fa fa-bars text-secondary"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto">
@@ -91,8 +91,6 @@
                             <div class="dropdown-menu m-0 bg-secondary rounded-0">
                                 <a href="{% url 'blog-home' %}" class="dropdown-item">{% translate "Our Blog" %}</a>
                                 <a href="{% url 'team-home' %}" class="dropdown-item">{% translate "Our Team" %}</a>
-                                <a href="{% url 'testimonial-home' %}" class="dropdown-item">{% translate "Testimonial" %}</a>
-                                <a href="404.html" class="dropdown-item">{% translate "404 Page" %}</a>
                             </div>
                         </div>
                         <a href="{% url 'contact' %}" class="nav-item nav-link">{% translate "Contact" %}</a>
@@ -100,18 +98,18 @@
                     <div class="d-flex me-4">
                         <div id="phone-tada" class="d-flex align-items-center justify-content-center">
                             <a href="" class="position-relative wow tada" data-wow-delay=".9s">
-                                <i class="fa fa-phone-alt text-primary fa-2x me-4"></i>
+                                <i class="fa fa-phone-alt text-secondary fa-2x me-4"></i>
                                 <div class="position-absolute" style="top: -7px; left: 20px;">
                                     <span><i class="fa fa-comment-dots text-secondary"></i></span>
                                 </div>
                             </a>
                         </div>
-                        <div class="d-flex flex-column pe-3 border-end border-primary">
-                            <span class="text-primary">{% translate "Have any questions?" %}</span>
+                        <div class="d-flex flex-column pe-3 border-end border-secondary">
+                            <span class="text-secondary">{% translate "Have any questions?" %}</span>
                             <a href="#"><span class="text-secondary">{{ settings_data.phone }}</span></a>
                         </div>
                     </div>
-                    <button class="btn-search btn btn-primary btn-md-square rounded-circle" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-white"></i></button>
+                    <button class="btn-search btn btn-secondary btn-md-square rounded-circle" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-white"></i></button>
                 </div>
             </nav>
         </div>
@@ -119,6 +117,17 @@
   
     <!-- Navbar End -->
 
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-5">
+            <img src="{{ settings_data.long_banner.url }}" class="img-fluid position-absolute" style="width: 100%; height: auto; top: 0; left: 0; z-index: -1;">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="/">{% translate "Home" %}</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div><!-- Page Header End -->
     {% block body %}
         
     {% endblock body %}
@@ -130,13 +139,13 @@
 
                 <div class="col-md-6 col-lg-4 col-xl-3">
                     <div class="footer-item">
-                        <div class="d-flex flex-column p-4 ps-5 text-dark border border-primary" style="border-radius: 50% 20% / 10% 40%;">
+                        <div class="d-flex flex-column p-4 ps-5 text-dark border border-secondary" style="border-radius: 50% 20% / 10% 40%;">
+                            <p>{% translate "Saturday: 8am to 5pm" %}</p>
                             <p>{% translate "Monday: 8am to 5pm" %}</p>
                             <p>{% translate "Tuesday: 8am to 5pm" %}</p>
                             <p>{% translate "Wednesday: 8am to 5pm" %}</p>
                             <p>{% translate "Thursday: 8am to 5pm" %}</p>
                             <p>{% translate "Friday: 8am to 5pm" %}</p>
-                            <p>{% translate "Saturday: 8am to 5pm" %}</p>
                             <p class="mb-0">{% translate "Sunday: Closed" %}</p>
                         </div>
                     </div>
@@ -144,17 +153,17 @@
 
                 <div class="col-md-6 col-lg-4 col-xl-3">
                     <div class="footer-item">
-                        <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">{% translate "LOCATION" %}</h4>
+                        <h4 class="text-secondary mb-4 border-bottom border-secondary border-2 d-inline-block p-2 title-border-radius">{% translate "LOCATION" %}</h4>
                         <div class="d-flex flex-column align-items-start">
-                            <a href="" class="text-body mb-4"><i class="fa fa-map-marker-alt text-primary me-2"></i> {{ settings_data.address }}</a>
-                            <a href="" class="text-start rounded-0 text-body mb-4"><i class="fa fa-phone-alt text-primary me-2"></i>{{ settings_data.phone }}</a>
-                            <a href="" class="text-start rounded-0 text-body mb-4"><i class="fas fa-envelope text-primary me-2"></i> {{ settings_data.email }}</a>
-                            <a href="" class="text-start rounded-0 text-body mb-4"><i class="fa fa-clock text-primary me-2"></i> {% translate "26/7 Hours Service" %}</a>
+                            <a href="" class="text-body mb-4"><i class="fa fa-map-marker-alt text-secondary me-2"></i> {{ settings_data.address }}</a>
+                            <a href="" class="text-start rounded-0 text-body mb-4"><i class="fa fa-phone-alt text-secondary me-2"></i>{{ settings_data.phone }}</a>
+                            <a href="" class="text-start rounded-0 text-body mb-4"><i class="fas fa-envelope text-secondary me-2"></i> {{ settings_data.email }}</a>
+                            <a href="" class="text-start rounded-0 text-body mb-4"><i class="fa fa-clock text-secondary me-2"></i> {% translate "26/7 Hours Service" %}</a>
                             <div class="footer-icon d-flex">
-                                <a class="btn btn-primary btn-sm-square me-3 rounded-circle text-white" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-primary btn-sm-square me-3 rounded-circle text-white" href=""><i class="fab fa-twitter"></i></a>
-                                <a href="#" class="btn btn-primary btn-sm-square me-3 rounded-circle text-white"><i class="fab fa-instagram"></i></a>
-                                <a href="#" class="btn btn-primary btn-sm-square rounded-circle text-white"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-secondary btn-sm-square me-3 rounded-circle text-white" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-secondary btn-sm-square me-3 rounded-circle text-white" href=""><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="btn btn-secondary btn-sm-square me-3 rounded-circle text-white"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="btn btn-secondary btn-sm-square rounded-circle text-white"><i class="fab fa-linkedin-in"></i></a>
                             </div>
                         </div>
                     </div>
@@ -162,13 +171,13 @@
 
                 <div class="col-md-6 col-lg-4 col-xl-3">
                     <div class="footer-item">
-                        <h2 class="fw-bold mb-3"><span class="text-primary mb-0">{{ settings_data.site_name }}</span><span class="text-secondary">{{ settings_data.site_name }}</span></h2>
+                        <h2 class="fw-bold mb-3"><span class="text-secondary">{{ settings_data.site_name }}</span></h2>
                         <p class="mb-4">{{ settings_data.title_logo }}.</p>
-                        <div class="border border-primary p-3 rounded bg-light">
+                        <div class="border border-secondary p-3 rounded bg-light">
                             <h5 class="mb-3">{% translate "Newsletter" %}</h5>
-                            <div class="position-relative mx-auto border border-primary rounded" style="max-width: 400px;">
+                            <div class="position-relative mx-auto border border-secondary rounded" style="max-width: 400px;">
                                 <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="{% translate 'Your email' %}">
-                                <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2 text-white">{% translate "SignUp" %}</button>
+                                <button type="button" class="btn btn-secondary py-2 position-absolute top-0 end-0 mt-2 me-2 text-white">{% translate "SignUp" %}</button>
                             </div>
                         </div>
                     </div>
@@ -197,7 +206,7 @@
                     <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>{{ settings_data.stie_name }}</a>, {% translate "All rights reserved." %}</span>
                 </div>
                 <div class="col-md-6 my-auto text-center text-md-end text-white">
-                    {% translate "Designed By" %} <a class="border-bottom" href="#">ENAS ATEF</a>
+                    {% translate "Designed By" %} <a class="border-bottom" href="#">01012105785</a>
                 </div>
             </div>
         </div>
@@ -205,7 +214,7 @@
     <!-- Copyright End -->
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+    <a href="#" class="btn btn-secondary border-3 border-secondary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>

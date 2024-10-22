@@ -57,7 +57,7 @@ msgstr ""
 #: .\blog\templates\blog\blog.html:27
 #: .\homepage\templates\homepage\home.html:190
 msgid "Read Our Latest News & Blog"
-msgstr ""
+msgstr "اقرأ أحدث أخبارنا ومدونتنا"
 
 #: .\blog\templates\blog\blog.html:34 .\event\templates\event\event.html:20
 msgid "Image"
@@ -75,7 +75,7 @@ msgstr "طفل"
 
 #: .\blog\templates\blog\blog.html:55
 msgid "View Details"
-msgstr ""
+msgstr "عرض التفاصيل"
 
 #: .\contact\templates\contact\contact.html:12
 #, fuzzy
@@ -85,7 +85,7 @@ msgstr "اتصل"
 
 #: .\contact\templates\contact\contact.html:13
 msgid "Contact For Any Query"
-msgstr ""
+msgstr "اتصل بنا لأي استفسار"
 
 #: .\contact\templates\contact\contact.html:14
 msgid ""
@@ -229,7 +229,7 @@ msgstr "شهاداتنا"
 #: .\homepage\templates\homepage\home.html:271
 #: .\testimonial\templates\testimonial\testimonial.html:12
 msgid "Parents Say About Us"
-msgstr "ماذا يقول الآباء عنا"
+msgstr "ماذا يقول تعليقات زوار المدرسه"
 
 #: .\project\settings.py:70
 msgid "Arabic"
