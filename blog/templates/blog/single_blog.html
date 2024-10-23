@@ -12,10 +12,13 @@
         </div>
         
         <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="blog-item">
+   
+
+            <div class="col-md-4">
+                <!-- Main Image Section -->
+                <div class="blog-item mb-4">
                     <div class="blog-img overflow-hidden position-relative img-border-radius mb-4">
-                        <img src="{{ post.image.url }}" class="img-fluid w-100" alt="{% translate 'Main Image' %}">
+                        <img src="{{ post.image.url }}" class="img-fluid" style="max-height: 500px; width: 100%; object-fit: cover;" alt="{% translate 'Main Image' %}">
                     </div>
                     
                     <div class="d-flex justify-content-between px-4 py-2 bg-light border-bottom border-secondary blog-date-comments">
@@ -28,28 +31,40 @@
                             <p>{{ post.content }}</p>
                         </div>
                     </div>
-
-                    <!-- Additional Images Section -->
-                    <div class="additional-images my-4">
-                        <h4 class="text-secondary">{% translate "Additional Images" %}</h4>
-                        <div class="row">
-                            {% for image in post.additional_images.all %}
-                                <div class="col-md-6 mb-3">
-                                    <div class="img-border-radius">
-                                        <img src="{{ image.url }}" class="img-fluid w-100" alt="{% translate 'Additional Image' %}">
-                                    </div>
-                                    <p class="mt-2">{{ image.description }}</p> <!-- Description for each image -->
-                                </div>
-                            {% endfor %}
-                        </div>
-                    </div>
-
-                    <div class="text-center my-4">
-                        <a href="#" class="btn btn-secondary text-white px-4 py-2 btn-border-radius">{% translate "Back to Blog" %}</a>
-                    </div>
                 </div>
+             
+                </div>
+
             </div>
         </div>
+        <div class="row justify-content-center">
+
+            <div class="col-md-8">
+            <!-- Additional Images Section -->
+            <div class="additional-images-section">
+                <h4 class="text-secondary mb-3">{% translate "Additional Images" %}</h4>
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" style="margin-top: 30px;">
+                    <div class="carousel-inner">
+                        {% for image in post.additional_images.all %}
+                            <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                                <img src="{{ image.url }}" class="d-block w-100" alt="{% translate 'Additional Image' %}" style="max-height: 500px; object-fit: cover;">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <p>{{ image.description }}</p>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">{% translate 'Previous' %}</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">{% translate 'Next' %}</span>
+                    </button>
+                </div>
+            </div>
+
     </div>
 </div>
 <!-- Single Blog End -->
