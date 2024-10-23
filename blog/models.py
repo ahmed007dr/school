@@ -9,3 +9,9 @@ class BlogPost(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class AdditionalImage(models.Model):
+    blog_post = models.ForeignKey('BlogPost', related_name='additional_images', on_delete=models.CASCADE)
+    image = models.ImageField(upload_to='blog_images/')
+    description = models.TextField(blank=True, null=True)  # Optional description

@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block body %}
+<!-- Single Blog Start -->
+<div class="container-fluid blog py-5">
+    <div class="container py-5">
+        <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h4 class="text-secondary mb-4 border-bottom border-secondary border-2 d-inline-block p-2 title-border-radius">{% translate "Blog Details" %}</h4>
+            <h1 class="mb-5 display-3">{{ post.title }}</h1>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="blog-item">
+                    <div class="blog-img overflow-hidden position-relative img-border-radius mb-4">
+                        <img src="{{ post.image.url }}" class="img-fluid w-100" alt="{% translate 'Main Image' %}">
+                    </div>
+                    
+                    <div class="d-flex justify-content-between px-4 py-2 bg-light border-bottom border-secondary blog-date-comments">
+                        <small class="text-dark"><i class="fas fa-calendar me-1"></i> {{ post.date_posted }}</small>
+                        <small class="text-dark"><i class="fas fa-user me-1"></i> {{ post.author }}</small>
+                    </div>
+                    
+                    <div class="px-4 py-3 bg-light">
+                        <div class="blog-text-inner">
+                            <p>{{ post.content }}</p>
+                        </div>
+                    </div>
+
+                    <!-- Additional Images Section -->
+                    <div class="additional-images my-4">
+                        <h4 class="text-secondary">{% translate "Additional Images" %}</h4>
+                        <div class="row">
+                            {% for image in post.additional_images.all %}
+                                <div class="col-md-6 mb-3">
+                                    <div class="img-border-radius">
+                                        <img src="{{ image.url }}" class="img-fluid w-100" alt="{% translate 'Additional Image' %}">
+                                    </div>
+                                    <p class="mt-2">{{ image.description }}</p> <!-- Description for each image -->
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                    <div class="text-center my-4">
+                        <a href="#" class="btn btn-secondary text-white px-4 py-2 btn-border-radius">{% translate "Back to Blog" %}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Single Blog End -->
+{% endblock body %}

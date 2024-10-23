@@ -6,6 +6,7 @@ def blog_view(request):
     return render(request, 'blog/blog.html', {'posts': posts})
 
 
-def blog_post_detail(request, post_id):
+
+def single_blog(request, post_id):
     post = get_object_or_404(BlogPost, id=post_id)
-    return render(request, 'blog/detail.html', {'post': post})
+    return render(request, 'blog/single_blog.html', {'post': post})
